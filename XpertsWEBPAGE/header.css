@@ -1,0 +1,336 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------ NAVIGATION / MENU --------------*/
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: scroll;
+    background-attachment: fixed;
+}
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(30%);
+}
+.menu ul li {
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+    list-style: none;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.menu ul li::after {
+    content: '';
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    height: 1px;
+    transition: 0.25s;
+}
+.menu ul li:hover::after {
+    width: 100%;
+}
+.logo {
+    transform: translateX(-85px);
+}
+.logo-pic {
+    width: 200px;
+    cursor: pointer;
+}
+.button-contactsupport {
+    padding: 6px 8px;
+    margin-left: 10px;
+    border: 2px solid red;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.25s;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.button-contactsupport:hover {
+    color: white;
+    background-color: red;
+}
+.content {
+    position: absolute;
+    transform: translateY(-85%);
+    text-align: left;
+    top: 50%;
+    margin-left: 150px;
+}
+.content h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+.car-enth {
+    color: red;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+.content p{
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+
+/*----------- SERVICES -------------*/
+
+
+.Services {
+    width: 80%;
+    margin: 100px;
+    padding: 50px;
+    text-align: center;
+}
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+.services-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 600px;
+    margin-top: 60px;
+    display: inline-block;
+    margin: 20px;
+}
+.services-col img {
+    width: 100%;
+}
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.layer:hover {
+    background: rgba(226, 0, 0, 0.7);
+}
+.layer h2 {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-weight: 500;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h2{
+    bottom: 50%;
+    opacity: 1;
+}
+
+
+/*------------ ABOUT -----------*/
+
+
+.About {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/about-bg.jpg);
+    padding-top: 150px;
+    padding-bottom: 400px;
+}
+.about-col {
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+.about-col h1 {
+    margin-bottom: 200px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    
+}
+.about-col p {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+
+
+/*------------ BOOKING -----------*/
+
+
+
+.Booking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    border: 2px solid black;
+    margin: 250px 500px;
+}
+.booking-details h2 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+.booking-row {
+    margin-top: 20px;
+}
+.form-row {
+    margin-top: 10px;
+}
+.form-text {
+    width: 243px;
+    border: 1px solid black;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.option-form {
+    width: 248px;
+    border: 1px solid black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+.submit {
+    width: 500px;
+    height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.submit:hover {
+    background: black;
+    color: white;
+}
+
+
+/* --------  REVIEWS  --------- */
+
+
+.reviews {
+    padding: 40px 0px;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(/img/reviews-bg.jpg);
+    color: white;
+    margin-top: 300px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}
+.inner h1 {
+    text-align: center;
+    margin-bottom: 70px;
+    letter-spacing: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+.reviews-row {
+    display: flex;
+    align-items: center;
+}
+.review1 {
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2px solid red;
+    padding: 20px;
+    background: transparent;
+    color: white;
+    width: 420px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.reviews-img {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border-radius: 50px;
+}
+.reviews-text {
+    display: inline-block;
+    margin-left: 8px;
+    line-height: 30px;
+}
+.reviews-text p {
+    font-size: 13px;
+    font-style: italic;
+}
+.fname {
+    font-weight: 700;
+}
+
+
+
+
+
+/* --------  FOOTER  --------- */
+
+
+
+.Footer {
+    background-color: rgb(168, 159, 159);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-row {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+}
+.footer-row p {
+    padding-top: 5px;
+    
+}
+.footer-icons ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px 15px;
+}
+.footer-icons ul li a {
+    color: black;
+}
